@@ -1,0 +1,358 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #18274e;
+  color: #e5e5e5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.form {
+  position: absolute;
+  left: 13.59%;
+  right: 13.28%;
+  top: 30.26%;
+  bottom: 15.53%;
+  background: #c4c4c4;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
+  border-radius: 22px;
+}
+
+.newPokemon {
+  height: 237.94091796875px;
+  width: 345.1107177734375px;
+  left: 666px;
+  top: 379.261962890625px;
+  border-radius: [object Object]px;
+  left: 53.41%;
+  right: 18.92%;
+  top: 47.41%;
+  bottom: 47.99%;
+  background: #27a9fe;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 36.817657470703125px;
+  width: 345.1107177734375px;
+  left: 666px;
+  top: 379.261962890625px;
+  border-radius: 10px;
+}
+.nPHW {
+  position: sticky;
+  left: 666px;
+  top: 379.261962890625px;
+  border-radius: [object Object]px;
+  top: 47.41%;
+  bottom: 47.99%;
+  background: #27a9fe;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 36.817657470703125px;
+  left: 654px;
+  margin: 5px 10px 0px 9px;
+  border-radius: 10px;
+}
+.vl {
+  border: none;
+  border-left: 6px solid rgb(75, 80, 75);
+  margin-left: 147px;
+  height: 500px;
+}
+.addPoke {
+  background: #51ae5e;
+  font-weight: bold;
+  color:white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 36.81768798828125px;
+  width: 345.1107177734375px;
+  left: 626px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0px 0px;
+}
+.formHolder {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50px;
+  position: absolute;
+  position: sticky;
+}
+
+.holdImg{
+  height: 700px;
+  width: 500px;
+  bottom: 90px;
+  margin: -95px 7px 24px -41px;
+  position: absolute;
+  table-layout: fixed;
+  top: 90px;overflow:visible;
+  opacity: 44%;
+}
+.formGreet {
+  margin: 19px;
+
+  left: -784px;
+  top: 103px;
+  border-radius: 0px;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+  left: 54.21%;
+  right: 19.65%;
+  bottom: 56.28%;
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #443636;
+}
+.Search {
+  position: absolute;
+  left: 16.67%;
+  right: 16.73%;
+  top: 5.27%;
+  bottom: 86.97%;
+  background: #27a9fe;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  height: 62.13862609863281px;
+  width: 60%;
+  top: 42.19287109375px;
+  border-radius: 8px;
+  padding: 30px;
+  font-size: 30px;
+  font-style: white;
+  font-weight: bolder;
+}
+.Navigator {
+  text-align: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 82.28%;
+  height: 141.9215545654297px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #dc0a2d;
+}
+.ADDPOKE {
+  height: 56.00147247314453px;
+  width: 124.2398681640625px;
+  border-radius: 9px;
+  position: absolute;
+  left: 1064.47px;
+  left: 85.36%;
+  right: 4.67%;
+  border: none;
+  background: #51ae5e;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.phoneHome {
+  position: absolute;
+  left: 4.21%;
+  right: 90.31%;
+  top: 45.26px;
+  bottom: 6.24%;
+  height: 58.82823181152344px;
+  width: 61.93954849243164px;
+  left: 58.95452880859375px;
+  border-radius: 0px;
+  position: absolute;
+  left: 4.73%;
+  right: 90.31%;
+  bottom: 87.01%;
+  border-radius: 300px;
+  background: #268fd3;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+}
+.innerCircle {
+  height: 20.762897491455078px;
+  width: 22.217453002929688px;
+  left: 79.1522216796875px;
+  top: 5.26px;
+  border-radius: 100px;
+  position: absolute;
+  left: 26%;
+  right: 92.3%;
+  bottom: 67px;
+  background: #95cbfd;
+  filter: blur(3px);
+}
+.inCircle {
+  height: 11.073554992675781px;
+  width: 12.118614196777344px;
+  left: 83.864990234375px;
+  top: 55.6429443359375px;
+  border-radius: 180px;
+
+  position: absolute;
+  left: 36.73%;
+  right: 92.3%;
+  top: 6.8px;
+  bottom: 66px;
+
+  background: #d0e9ff;
+  filter: blur(2px);
+}
+.spanDex {
+  height: 76px;
+  width: 259px;
+  left: 11px;
+  top: 0px;
+  border-radius: nullpx;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 500%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  left: 3.92%;
+  right: 3.81%;
+  margin-top: 70%;
+  bottom: 8.27%;
+  color: #ffffff;
+}
+hr {
+  height: 0px;
+  left: 481.62115478515625px;
+  position: absolute;
+  left: 38.62%;
+  right: 37.45%;
+  border: 3px solid #fffefe;
+}
+.innerText {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contianer {
+  padding: 2px 0;
+}
+.card {
+  height: 197.1558837890625px;
+  width: 231.60763549804688px;
+  left: 111.96923828125px;
+  top: 503.24615478515625px;
+  position: absolute;
+  padding: 14px;
+  left: 8.98%;
+  right: 72.45%;
+  top: 62.83%;
+  bottom: 12.56%;
+
+  background: #c4c4c4;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
+  border-radius: 22px;
+}
+.Poke_field {
+  position: absolute;
+  left: 13.54%;
+  right: 13.33%;
+  top: 40.28%;
+  bottom: 11.67%;
+  background: rgba(17, 28, 43, 0.81);
+  filter: blur(75px);
+  border-radius: 30px;
+}
+
+.toggle {
+  height: 32.528564453125px;
+  width: 35.68257141113281px;
+  left: 52.47991943359375px;
+  top: 718.4715576171875px;
+  border-radius: 0px;
+  position: absolute;
+  left: 4.21%;
+  right: 92.93%;
+  top: 89.7%;
+  bottom: 6.24%;
+  border: none;
+  border-radius: 100%;
+  background: #f80413;
+}
+.cardBody {
+  font-weight: 700;
+  font-variant: initial;
+  text-align: justify;
+  font-size: smaller;
+  color: #3e3636;
+}
+img {
+  height: 115.071533203125px;
+  width: 110.89141845703125px;
+  left: 144.946533203125px;
+  top: 303.0216979980469px;
+  border-radius: 0px;
+}
+.Poke_card_Display {
+  position: absolute;
+  left: 13.54%;
+  right: 13.33%;
+  top: 30.28%;
+  width: fit-content;
+  bottom: 12.56%;
+}
+.Poke-jar {
+  height: 502.8499450683594px;
+  width: 930px;
+  left: 116.90625px;
+  top: 215.824951171875px;
+  border-radius: 0px;
+}
+input {
+  position: center;
+
+  border: none;
+  padding: 9px;
+  margin: 4px;
+}

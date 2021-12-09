@@ -1,0 +1,47 @@
+
+{
+    "pokemon": [
+        {
+            "pokemon_id": 1,
+            "name":"Bulbasaur",
+            "height": 0.7,
+            "weight": 6.9,
+            "type": "Grass"
+        },
+        {
+            "pokemon_id": 2,
+            "name":"Ivysaur",
+            "height": 1,
+            "weight": 13,
+            "type": "Grass"
+        },
+        {
+            "pokemon_id": 3,
+            "name":"Venasaur",
+            "height": 2,
+            "weight": 100,
+            "type": "Grass"
+        },
+        {
+            "pokemon_id": 4,
+            "name":"Charmander",
+            "height": 0.6,
+            "weight": 8.5,
+            "type": "Fire"
+        },
+        {
+            "pokemon_id": 5,
+            "name":"Charmeleon",
+            "height": 1.1,
+            "weight": 19,
+            "type": "Fire"
+        },
+        {
+            "pokemon_id": 6,
+            "name":"Charizard",
+            "height": 1.7,
+            "weight": 90.5,
+            "type": "Fire"
+        }
+    ]
+}
