@@ -1,29 +1,34 @@
-import Toggle from './Toggle';
+// import Toggle from './Toggle';
 import './App.css';
 import Form from './Form';
-import Navigator from './Navigator';
-import {Route, Link, Switch, BrowserRouter as Router} from "react-router-dom"
+// import Navigator from './Navigator';
+import {Route, Switch, Link} from "react-router-dom"
 import App from './App.js'
-
 
 function AddNew() {
   return (
-  <Router> 
+  <div>
     <div >
       {/* <Navigator/> */}
-        <Form />
-        <button className = "toggle" />
+       <Switch>
+          <Route exact path="/App">
+          <App />
+          </Route>
+          <div>
+            <Link to='App'>
+              <div className="buttonContainer">
+                <button className = "phoneHome">
+                  <div className = "innerCircle"/>
+                  ""
+                  <div className = "inCircle"/>
+                </button>
+              </div>
+            </Link>
+          </div>
+       </Switch>
+      <Form />
     </div>
-    <div>
-         <Link to="/App">
-            <button type="button">Home
-            </button>
-         </Link>
-      </div>
-    <Switch>
-      <Route exact path="/App" component={App}/>
-    </Switch>
-  </Router>
+  </div>
   );
 }
 

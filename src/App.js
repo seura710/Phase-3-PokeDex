@@ -1,35 +1,32 @@
 import React  from "react"; 
-import Display from './Display';
-import  Navigator  from './Navigator';
 import './App.css';
+import {Route, Switch} from "react-router-dom"
+// import Search from './Search'
+import  Navigator  from './Navigator';
 import AddNew from "./AddNew";
-import {Route, Link, Switch, BrowserRouter as Router} from "react-router-dom"
+import Display from './Display';
 
 
 
 function App() {
   return (
-    <Router>
     <div className="App">
-
-     <div className = "container">
-       <div classname = "global">
-        <Navigator />
-        </div>
-        <div className = "Poke_field"/>
-        {/* <Display /> */}
-     </div>
-     {/* <AddNew/> */}
-         <Link to="/AddNew">
-         <button type="button">AddNew
-           </button>
-         </Link>
-    
-    </div>
+      <Navigator />
       <Switch>
-        <Route exact path="/AddNew" component={AddNew}/>
+        <Route exact path='/AddNew'>
+          <AddNew />
+        </Route>
       </Switch>
-    </Router>
+     <div className = "container">
+      <div classname = "global">
+
+      </div>
+        
+      <div className = "Poke_field"/>
+        <Display />
+      </div>
+  
+    </div>
   );
 }
 

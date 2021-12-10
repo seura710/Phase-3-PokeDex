@@ -1,14 +1,13 @@
-import Toggle from './Toggle';
+// import Toggle from './Toggle';
 import './App.css';
 import Card from './Card';
 
 function Display() {
   return (
-    <div >
+    <div>
       <br/>
       <div className = "title">
-      <span className = "spanDex">PokéDex <hr/></span>
-     
+      <span className = "spanDex">PokéDex <hr/></span> 
       </div>
       <div className = "Poke-jar">
 
@@ -17,9 +16,7 @@ function Display() {
         <Card />
       </div>
         </div>
-      <Toggle/>
-  
-  
+      {/* <Toggle/> */}
     </div>
     
   );
