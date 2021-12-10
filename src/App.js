@@ -19,6 +19,12 @@ function App() {
       .then((data) => setPokemonCards(data));
   }, []);
 
+  function handlePokeDelete(deleted) {
+    console.log("Delete button has been clicked!")
+    const newPokemonCards = pokemonCards.filter((poke) => poke !== deleted);
+    setPokemonCards(newPokemonCards);
+  }
+
   function handleAdd(newPoke) {
     console.log("Submit button has been clicked!");
     const addPoke = [...pokemonCards, newPoke];
@@ -32,7 +38,7 @@ function App() {
         <Route exact path='/AddNew'>
           <AddNew pokeDB={pokeDB} handleAdd={handleAdd}/>
         </Route>
-        <Display />
+        <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete}/>
       </Switch>
      <div className = "container"></div>
       <div classname = "global">
@@ -47,5 +53,3 @@ function App() {
 }
 
 export default App;
-
-//make route for AddNew

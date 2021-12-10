@@ -24,6 +24,7 @@ class ApplicationController < Sinatra::Base
         weight: params[:weight],
         type_id: params[:type_id],
         ability_id: params[:ability_id],
+        image: params[:image]
       )
 
     #creates a new pokemon in our database
