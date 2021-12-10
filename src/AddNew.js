@@ -5,7 +5,7 @@ import Form from './Form';
 import {Route, Switch, Link} from "react-router-dom"
 import App from './App.js'
 
-function AddNew() {
+function AddNew( {pokeDB , handleAdd} ) {
   return (
   <div>
     <div >
@@ -26,7 +26,7 @@ function AddNew() {
             </Link>
           </div>
        </Switch>
-      <Form />
+      <Form pokeDB={pokeDB} handleAdd={handleAdd}/>
     </div>
   </div>
   );
