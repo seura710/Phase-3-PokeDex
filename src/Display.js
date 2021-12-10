@@ -28,8 +28,9 @@ function Display() {
       <div >
         <br/>
         <div className = "title">
-        <span className = "spanDex">PokéDex <hr/></span>
-      
+          <div>
+            <span className = "spanDex">PokéDex <hr/></span>
+          </div>
         </div>
         <div className = "Poke-jar">
 
