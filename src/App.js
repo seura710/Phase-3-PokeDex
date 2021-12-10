@@ -1,6 +1,7 @@
 import React from "react";
 import Display from "./Display";
 import Navigator from "./Navigator";
+import Search from "./Search";
 import "./App.css";
 import AddNew from "./AddNew";
 import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
@@ -10,20 +11,25 @@ function App() {
     <Router>
       <div className="App">
         <div className="container">
-          <div classname="global">
-            <Navigator />
-          </div>
-          <div className="Poke_field" />
-          {/* <Display /> */}
-        </div>
-        {/* <AddNew/> */}
+          <div className="global">
+          <div className="Navigator">
+        <div className = " navContain">
+        <div className = "buttonContainer">
+         </div>
+       <Search  className = "Search"/>
+         </div>
         <Link to="/AddNew">
-          <button type="button">AddNew</button>
+        <button className= "ADDPOKE" aria-label = "+ ADD POKEMON">+ ADD NEW POKEMON</button>
         </Link>
-      </div>
       <Switch>
         <Route exact path="/AddNew" component={AddNew} />
       </Switch>
+          <Display/>
+    </div>
+          </div>
+          {/* <div className="Poke_field" /> */}
+        </div>
+      </div>
     </Router>
   );
 }

@@ -27,15 +27,9 @@ function Navigator() {
     <div className="Navigator">
       <div className = " navContain">
         <div className="buttonContainer">
-       <button className = "phoneHome"><div className = "innerCircle"/><div className = "inCircle"/></button>
-        </div>
+         </div>
        <Search  className = "Search"/>
-       {/* <Search handleSearch = {handleSearch} className = "Search"/> */}
-      </div>
-      <div/>
- <button className= "ADDPOKE" aria-label = "+ ADD POKEMON">+ ADD NEW POKEMON</button>
-
-        {/* <AddNew /> */}
+         </div>
     </div>
   );
 }

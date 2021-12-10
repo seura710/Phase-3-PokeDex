@@ -10,7 +10,6 @@ function Search() {
   return (
     <div className="search_bar">
       <input  onChange = { (e) => console.log(e.target.value) }  className ="Search" placeholder="Search PokéDex" /> 
-       
     </div>
     
   );
