@@ -31,7 +31,5 @@ function AddNew( {pokeDB , handleAdd} ) {
   </div>
   );
 }
-
 export default AddNew;
-
 //make Route back to App.js

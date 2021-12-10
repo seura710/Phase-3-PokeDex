@@ -291,13 +291,24 @@ hr {
   right: 72.45%;
   top: 62.83%;
   bottom: 12.56%;
-
+  margin: 9px;
   background: #c4c4c4;
   border: 2px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
 }
+.Delete{
+  border: none;
+  font-size: small;
+  font-weight: 600;
+  background-color: transparent;
+  float: right;
+  padding: 0px;
+  color: aliceblue;
+  margin: -6px 6px 0px 7px;
+}
+
 .Poke_field {
   position: absolute;
   left: 13.54%;
