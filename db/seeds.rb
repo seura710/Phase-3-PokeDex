@@ -77,6 +77,7 @@ Pokemon.create(
   weight: 6.9,
   type_id: grasspoison.id,
   ability_id: overgrow.id,
+  image: 'https://img.pokemondb.net/artwork/large/bulbasaur.jpg',
 )
 Pokemon.create(
   name: 'Ivyasaur',
@@ -84,6 +85,7 @@ Pokemon.create(
   weight: 13,
   type_id: grasspoison.id,
   ability_id: overgrow.id,
+  image: 'https://img.pokemondb.net/artwork/large/ivysaur.jpg',
 )
 Pokemon.create(
   name: 'Venasaur',
@@ -91,6 +93,7 @@ Pokemon.create(
   weight: 100,
   type_id: grasspoison.id,
   ability_id: overgrow.id,
+  image: 'https://img.pokemondb.net/artwork/large/venasaur.jpg',
 )
 Pokemon.create(
   name: 'Charmander',
@@ -98,6 +101,7 @@ Pokemon.create(
   weight: 8.5,
   type_id: fire.id,
   ability_id: blaze.id,
+  image: 'https://img.pokemondb.net/artwork/large/charmander.jpg',
 )
 Pokemon.create(
   name: 'Charmeleon',
@@ -105,6 +109,7 @@ Pokemon.create(
   weight: 19,
   type_id: fire.id,
   ability_id: blaze.id,
+  image: 'https://img.pokemondb.net/artwork/large/charmeleon.jpg',
 )
 Pokemon.create(
   name: 'Charizard',
@@ -112,6 +117,7 @@ Pokemon.create(
   weight: 90.5,
   type_id: fireflying.id,
   ability_id: blaze.id,
+  image: 'https://img.pokemondb.net/artwork/large/charizard.jpg',
 )
 Pokemon.create(
   name: 'Squirtle',
@@ -119,6 +125,7 @@ Pokemon.create(
   weight: 9,
   type_id: water.id,
   ability_id: torrent.id,
+  image: 'https://img.pokemondb.net/artwork/large/squirtle.jpg',
 )
 Pokemon.create(
   name: 'Wartortle',
@@ -126,6 +133,7 @@ Pokemon.create(
   weight: 22.5,
   type_id: water.id,
   ability_id: torrent.id,
+  image: 'https://img.pokemondb.net/artwork/large/wartortle.jpg',
 )
 Pokemon.create(
   name: 'Blastoise',
@@ -133,6 +141,7 @@ Pokemon.create(
   weight: 85.5,
   type_id: water.id,
   ability_id: torrent.id,
+  image: 'https://img.pokemondb.net/artwork/large/blastoise.jpg',
 )
 Pokemon.create(
   name: 'Caterpie',
@@ -140,6 +149,7 @@ Pokemon.create(
   weight: 2.9,
   type_id: bug.id,
   ability_id: shielddust.id,
+  image: 'https://img.pokemondb.net/artwork/large/caterpie.jpg',
 )
 Pokemon.create(
   name: 'Metapod',
@@ -147,6 +157,7 @@ Pokemon.create(
   weight: 9.9,
   type_id: bug.id,
   ability_id: shedskin.id,
+  image: 'https://img.pokemondb.net/artwork/large/metapod.jpg',
 )
 Pokemon.create(
   name: 'Pikachu',
@@ -154,6 +165,7 @@ Pokemon.create(
   weight: 2.9,
   type_id: electric.id,
   ability_id: static.id,
+  image: 'https://img.pokemondb.net/artwork/large/pikachu.jpg',
 )
 Pokemon.create(
   name: 'Nigel Thornberry',
@@ -161,6 +173,8 @@ Pokemon.create(
   weight: 70,
   type_id: unknown.id,
   ability_id: smashing.id,
+  image:
+    'https://cdn.costumewall.com/wp-content/uploads/2017/08/nigel-thornberry.webp',
 )
 
 puts '🌱 Done Seeding!'
