@@ -39,7 +39,12 @@ code {
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
 }
+.eigth  {
 
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .newPokemon {
   height: 237.94091796875px;
   width: 345.1107177734375px;
@@ -281,7 +286,6 @@ hr {
   width: 231.60763549804688px;
   left: 111.96923828125px;
   top: 503.24615478515625px;
-  position: absolute;
   padding: 14px;
   left: 8.98%;
   right: 72.45%;

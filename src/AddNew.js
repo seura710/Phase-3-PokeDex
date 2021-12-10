@@ -16,8 +16,7 @@ function AddNew() {
     </div>
     <div>
          <Link to="/App">
-            <button type="button">Home
-            </button>
+         <button className = "phoneHome"><div className = "innerCircle"/><div className = "inCircle"/></button>
          </Link>
       </div>
     <Switch>
