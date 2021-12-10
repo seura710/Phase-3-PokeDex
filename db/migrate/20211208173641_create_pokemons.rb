@@ -6,6 +6,7 @@ class CreatePokemons < ActiveRecord::Migration[6.1]
       t.float :weight
       t.integer :type_id
       t.integer :ability_id
+      t.string :image
     end
   end
 end

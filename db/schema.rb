@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_12_08_194840) do
     t.float "weight"
     t.integer "type_id"
     t.integer "ability_id"
+    t.string "image"
   end
 
   create_table "types", force: :cascade do |t|
