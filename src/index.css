@@ -27,7 +27,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.block{
+
+
+}
+
 .form {
+  height: 64%;
   position: absolute;
   left: 13.59%;
   right: 13.28%;
@@ -38,11 +45,19 @@ code {
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
+  display: flex;flex-direction: row;
+    flex-wrap: nowrap;
+    align-content:stretch;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 .eigth  {
 
   display: flex;
   flex-wrap: wrap;
+  width: 76%;
+  margin-top: 71px;
+
 
 }
 .newPokemon {
@@ -64,8 +79,10 @@ code {
   top: 379.261962890625px;
   border-radius: 10px;
 }
+.fixed {
+  display: flex;
+}
 .nPHW {
-  position: sticky;
   left: 666px;
   top: 379.261962890625px;
   border-radius: [object Object]px;
@@ -76,27 +93,29 @@ code {
   border-radius: 10px;
   height: 36.817657470703125px;
   left: 654px;
-  margin: 5px 10px 0px 9px;
+  margin: 6px;
   border-radius: 10px;
 }
 .vl {
   border: none;
   border-left: 6px solid rgb(75, 80, 75);
-  margin-left: 147px;
-  height: 500px;
+  margin-left: 214px;
+  height: 422px;
+  border-radius: 4px;
 }
 .addPoke {
   background: #51ae5e;
   font-weight: bold;
-  color:white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 20px;
-  height: 36.81768798828125px;
-  width: 345.1107177734375px;
+  height: 38px;
+  width: 93%;
   left: 626px;
-  border-radius: 20px;
+  border-radius: 11px;
   border: none;
   margin: 10px 0px 0px;
+
 }
 .formHolder {
   font-weight: bolder;
@@ -106,20 +125,46 @@ code {
   margin: 50px;
   position: absolute;
   position: sticky;
+  
+      display: flex;
+      align-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+      width: 60%;
 }
-
+.imgADDNEW{
+  height: 60%;
+  width: 64%;
+  left: 144.946533203125px;
+  top: 303.0216979980469px;
+  border-radius: 0px;
+  margin: -11px 128px -60px 2px;
+  opacity: 40%;
+}
+img{
+  height: 67%;
+  width: 64%;
+  left: 144.946533203125px;
+  top: 303.0216979980469px;
+}
 .holdImg{
-  height: 700px;
-  width: 500px;
   bottom: 90px;
-  margin: -95px 7px 24px -41px;
-  position: absolute;
   table-layout: fixed;
   top: 90px;overflow:visible;
   opacity: 44%;
 }
+.f.contain{
+    display: grid;
+    box-sizing: content-box;
+    display: grid;
+    object-fit: scale-down;
+    float: right;
+    justify-items: center;
+    margin: 0px -1px 7px -32px;
+    margin-left: -34px;
+}
 .formGreet {
-  margin: 19px;
 
   left: -784px;
   top: 103px;
@@ -193,6 +238,9 @@ code {
   font-size: large;
   font-weight: bold;
   color: white;
+  bottom: 86.7%;
+  padding: 9px;
+
 }
 .phoneHome {
   position: absolute;
@@ -292,8 +340,8 @@ hr {
   top: 62.83%;
   bottom: 12.56%;
   margin: 9px;
-  background: #c4c4c4;
-  border: 2px solid #ffffff;
+  background: white;
+  border: 2px solid #3b3d4d;
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
@@ -305,7 +353,7 @@ hr {
   background-color: transparent;
   float: right;
   padding: 0px;
-  color: aliceblue;
+  color: gray;
   margin: -6px 6px 0px 7px;
 }
 
@@ -342,13 +390,7 @@ hr {
   font-size: smaller;
   color: #3e3636;
 }
-img {
-  height: 115.071533203125px;
-  width: 110.89141845703125px;
-  left: 144.946533203125px;
-  top: 303.0216979980469px;
-  border-radius: 0px;
-}
+
 .Poke_card_Display {
   position: absolute;
   left: 13.54%;
@@ -365,8 +407,8 @@ img {
   border-radius: 0px;
 }
 input {
-  position: center;
 
+  position: center;
   border: none;
   padding: 9px;
   margin: 4px;
