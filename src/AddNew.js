@@ -1,5 +1,5 @@
 // import Toggle from './Toggle';
-import './App.css';
+// import './App.css';
 import Form from './Form';
 // import Navigator from './Navigator';
 import {Route, Switch, Link} from "react-router-dom"
@@ -11,18 +11,18 @@ function AddNew() {
     <div >
       {/* <Navigator/> */}
        <Switch>
-          <Route exact path="/App">
-          <App />
-          </Route>
+          {/* <Route exact path="/App"> */}
+          {/* <App /> */}
+          {/* </Route> */}
           <div>
             <Link to='App'>
-              <div className="buttonContainer">
+              {/* <div className="buttonContainer"> */}
                 <button className = "phoneHome">
                   <div className = "innerCircle"/>
                   ""
                   <div className = "inCircle"/>
                 </button>
-              </div>
+              {/* </div> */}
             </Link>
           </div>
        </Switch>

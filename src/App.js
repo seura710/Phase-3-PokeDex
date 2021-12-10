@@ -12,24 +12,28 @@ function App() {
   return (
     <div className="App">
       <Navigator />
+      {/* <Display /> */}
       <Switch>
         <Route exact path='/AddNew'>
           <AddNew />
         </Route>
+        <Display />
       </Switch>
+      {/* <Display /> */}
      <div className = "container">
       <div classname = "global">
 
       </div>
         
-      <div className = "Poke_field"/>
-        <Display />
-      </div>
+      {/* <div className = "Poke_field"/> */}
+        {/* <Display /> */}
+      {/* </div> */}
   
+    </div>
     </div>
   );
 }
 
 export default App;
 
-//make route for AddNew 
+//make route for AddNew
