@@ -1,39 +1,33 @@
-import React from "react";
-import Display from "./Display";
-import Navigator from "./Navigator";
-import Search from "./Search";
-import "./App.css";
+import React  from "react"; 
+import './App.css';
+import {Route, Switch} from "react-router-dom"
+// import Search from './Search'
+import  Navigator  from './Navigator';
 import AddNew from "./AddNew";
-import { Route, Link, Switch, BrowserRouter as Router } from "react-router-dom";
+import Display from './Display';
+
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <div className="container">
-          <div className="global">
-          <div className="Navigator">
-        <div className = " navContain">
-        <div className = "buttonContainer">
-         </div>
-       <Search  className = "Search"/>
-         </div>
-        <Link to="/AddNew">
-        <button className= "ADDPOKE" aria-label = "+ ADD POKEMON">+ ADD NEW POKEMON</button>
-        </Link>
+    <div className="App">
+      <Navigator />
       <Switch>
-        <Route exact path="/AddNew" component={AddNew} />
+        <Route exact path='/AddNew'>
+          <AddNew />
+        </Route>
+        <Display />
       </Switch>
-          <Display/>
-    </div>
-          </div>
-          {/* <div className="Poke_field" /> */}
-        </div>
+     <div className = "container"></div>
+      <div classname = "global">
+
       </div>
-    </Router>
+        
+      {/* <div className = "Poke_field"/>
+      </div> */}
+  
+    </div>
   );
 }
 
 export default App;
-
-//make route for AddNew

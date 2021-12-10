@@ -14,7 +14,15 @@ function Display() {
       .then((data) => setPokemonCards(data));
   }, []);
 
-
+  // function handlePokeRelease(deleted) {
+  //   const newPokemonCards = pokemonCards.filter((pokeCD) => pokeCD !== deleted);
+  //   setPokemonCards(newPokemonCards);
+  // }
+  // function handleAdd(newPoke) {
+  //   console.log("Submit button has been clicked!");
+  //   const addPoke = [...pokemonCards, new];
+  //   setPokemonCards(addPoke);
+  // }
 
   return (
       <div >
@@ -29,7 +37,7 @@ function Display() {
       <div className = "Poke_card_Display">
      
 
-          <Card pokemonCards = {pokemonCards} />
+          <Card pokemonCards = {pokemonCards}  />
      
         </div>
           </div>
