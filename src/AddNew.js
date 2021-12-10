@@ -1,10 +1,11 @@
-
-import "./App.css";
-import Form from "./Form";
-// import Navigator from ‘./Navigator’;
+// import Toggle from './Toggle';
+import './App.css';
+import Form from './Form';
+// import Navigator from './Navigator';
 import {Route, Switch, Link} from "react-router-dom"
-import App from "./App.js"
-function AddNew() {
+import App from './App.js'
+
+function AddNew( {pokeDB , handleAdd} ) {
   return (
   <div>
     <div >
@@ -14,8 +15,8 @@ function AddNew() {
           <App />
           </Route>
           <div>
-            <Link to="App">
-              <div className= "buttonContainer">
+            <Link to='App'>
+              <div className="buttonContainer">
                 <button className = "phoneHome">
                   <div className = "innerCircle"/>
                   ""
@@ -25,10 +26,11 @@ function AddNew() {
             </Link>
           </div>
        </Switch>
-      <Form />
+      <Form pokeDB={pokeDB} handleAdd={handleAdd}/>
     </div>
   </div>
   );
 }
+
 export default AddNew;
-//make Route back to App.js
+

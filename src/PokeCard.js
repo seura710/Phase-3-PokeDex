@@ -1,6 +1,6 @@
 import './App.css';
 
-function PokeCard({ img,name,height,weight,type,ability}) {
+function PokeCard({ handlePokeDelete, img,name,height,weight,type,ability}) {
 
   return (
     <div className="card">
@@ -10,7 +10,7 @@ function PokeCard({ img,name,height,weight,type,ability}) {
     <span>Height:{height}m</span> <span>Weight:{weight}kg</span><br/>
     <span>Type:{type}</span> <span>Ability:{ability}</span>
     <br/>
-    <button  className = "Delete" name = "Delete"> X </button>
+    <button  className = "Delete" name = "Delete" onClick = {handlePokeDelete}> X </button>
     </p>
   </div>
   );
