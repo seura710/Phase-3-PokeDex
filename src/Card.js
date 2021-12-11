@@ -1,7 +1,7 @@
 import './App.css';
 import PokeCard from './PokeCard';
 
-function Card({pokemonCards}) {
+function Card({pokemonCards,handlePokeDelete}) {
  
   const pokeCardDrawn = pokemonCards.map((pokeMON) => {
     return (
@@ -13,7 +13,8 @@ function Card({pokemonCards}) {
         weight = {pokeMON.weight}
         type = { pokeMON.type_id}
         ability ={ pokeMON.ability_id}
-        // handleTaskDelete={onDeleteTask}
+        img = {pokeMON.image}
+        handlePokeDelete={handlePokeDelete}
       />
 
     );

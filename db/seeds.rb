@@ -93,7 +93,7 @@ Pokemon.create(
   weight: 100,
   type_id: grasspoison.id,
   ability_id: overgrow.id,
-  image: 'https://img.pokemondb.net/artwork/large/venasaur.jpg',
+  image: 'https://img.pokemondb.net/artwork/large/venusaur.jpg',
 )
 Pokemon.create(
   name: 'Charmander',
@@ -125,7 +125,7 @@ Pokemon.create(
   weight: 9,
   type_id: water.id,
   ability_id: torrent.id,
-  image: 'https://img.pokemondb.net/artwork/large/squirtle.jpg',
+  image: 'https://img.pokemondb.net/artwork/large/squirtle.jpg'
 )
 Pokemon.create(
   name: 'Wartortle',

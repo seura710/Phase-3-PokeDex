@@ -1,19 +1,19 @@
 // import Toggle from './Toggle';
 import './App.css';
-import { useState,useEffect } from 'react';
+// import { useState,useEffect } from 'react';
 import Card from './Card';
-import Form from './Form';
+// import Form from './Form';
 
-function Display() {
+function Display( {pokemonCards, handlePokeDelete} ) {
 
-  const [pokemonCards, setPokemonCards] = useState([]);
-  const pokeDB = "http://localhost:9292/pokemon";
+  // const [pokemonCards, setPokemonCards] = useState([]);
+  // const pokeDB = "http://localhost:9292/pokemon";
 
-  useEffect(() => {
-    fetch(pokeDB)
-      .then((res) => res.json())
-      .then((data) => setPokemonCards(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch(pokeDB)
+  //     .then((res) => res.json())
+  //     .then((data) => setPokemonCards(data));
+  // }, []);
 
 
   return (
@@ -28,9 +28,9 @@ function Display() {
       </div> */}
 
       <div className = "Poke_card_Display">
-      <Card pokemonCards = {pokemonCards} />
+      <Card pokemonCards = {pokemonCards} handlePokeDelete = {handlePokeDelete}/>
       </div>
-      {/* <Toggle/> */}
+   
       
     </div>
     

@@ -4,7 +4,12 @@ import img from './placepoke.png'
 
 function Form({ pokeDB, handleAdd }) {
 
-const [text, setText] = useState("")
+const [name, setName] = useState("")
+const [height, setHeight] = useState("")
+const [weight, setWeight] = useState("")
+const [type_id, setType] = useState("")
+const [ability_id, setAbility] = useState("")
+const [image, setImage] = useState("")
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -15,7 +20,12 @@ const handleSubmit = (e) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      text: text,
+      name: name,
+      height: height,
+      weight: weight,
+      type_id: type_id,
+      ability_id: ability_id,
+      image: image
     }),
   })
     .then((r) => r.json())
@@ -26,18 +36,18 @@ const handleSubmit = (e) => {
     <div className="form">
       <form onSubmit = {handleSubmit}>
       <div className = "holdImg">
-        <img  className = "holdImg" aria-checked  alt = "placePoke" src = {img}/>
+        <img  className = "holdImg" alt = "placePoke" src = {img}/>
          </div>
           <div className ="formHolder">
             <hr className ="vl"/>
             <div className ="formHolder">
             <span className="formGreet">YOU FOUND A NEW POKEMON?</span>
-              <input placeholder ="Image"onChange ={(e) => setText(e.target.value)} className ="newPokemon"/>
-              <input placeholder ="Name" onChange ={(e) => setText(e.target.value)} className ="newPokemon"/>
-              <input placeholder = "Type"  onChange ={(e) => setText(e.target.value)} className ="newPokemon" />
-              <input placeholder = "Ability" onChange ={(e) => setText(e.target.value)} className ="newPokemon" />
-              <span> <input type ="number" placeholder = "Height" className ="nPHW" />
-              <input type ="number" placeholder = "Weigth" className ="nPHW"/></span>
+              <input placeholder ="Image"onChange ={(e) => setImage(e.target.value)} className ="newPokemon"/>
+              <input placeholder ="Name" onChange ={(e) => setName(e.target.value)} className ="newPokemon"/>
+              <input placeholder = "Type"  onChange ={(e) => setType(e.target.value)} className ="newPokemon" />
+              <input placeholder = "Ability" onChange ={(e) => setAbility(e.target.value)} className ="newPokemon" />
+              <span> <input type ="number" placeholder = "Height" onChange ={(e) => setHeight(e.target.value)} className ="nPHW" />
+              <input type ="number" placeholder = "Weigth" onChange ={(e) => setWeight(e.target.value)} className ="nPHW"/></span>
               <button className = "addPoke" type="submit">ADD POKEMON</button>
               </div>
         </div>
