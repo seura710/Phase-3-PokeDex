@@ -1,10 +1,11 @@
-
-import "./App.css";
-import Form from "./Form";
-// import Navigator from ‘./Navigator’;
+// import Toggle from './Toggle';
+import './App.css';
+import Form from './Form';
+// import Navigator from './Navigator';
 import {Route, Switch, Link} from "react-router-dom"
-import App from "./App.js"
-function AddNew() {
+import App from './App.js'
+
+function AddNew( {pokeDB , handleAdd} ) {
   return (
   <div>
     <div >

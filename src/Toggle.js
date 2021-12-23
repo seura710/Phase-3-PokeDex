@@ -2,11 +2,11 @@
 
 // [back,setBack] = useState(false)
 
-function Toggle() {
+// function Toggle() {
 
-    <div>
-  <button className = "toggle" />
-    </div>
-}
+//     <div>
+//   <button className = "toggle" />
+//     </div>
+// }
 
-export default Toggle;
+// export default Toggle;

@@ -6,7 +6,21 @@ import App from './App'
 
 
 function Navigator() {
-return (
+  
+  // const [pokemonDex, setPokemonDex] = useState([])
+
+  // useEffect(() => {
+  //   fetch(url)
+  //   .then(res => res.json())
+  //   .then(pokemonData => setPokemonDex(pokemonData))
+  // }, [])
+  
+  // function handleSearch(inputSearch) {
+  //   const searchResults = pokemonDex.filter(pokeCard => pokeCard.description.toLowerCase().includes(inputSearch.toLowerCase()))
+  //   return (setSearchRes(searchResults))
+  // }
+
+  return (
     <div className="Navigator">
       <div className = " navContain">
       <Link to='/App'>
