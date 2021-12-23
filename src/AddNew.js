@@ -15,8 +15,8 @@ function AddNew( {pokeDB , handleAdd} ) {
           <App />
           </Route>
           <div>
-            <Link to='App'>
-              <div className="buttonContainer">
+            <Link to="App">
+              <div className= "buttonContainer">
                 <button className = "phoneHome">
                   <div className = "innerCircle"/>
                   ""
@@ -26,12 +26,10 @@ function AddNew( {pokeDB , handleAdd} ) {
             </Link>
           </div>
        </Switch>
-      <Form pokeDB={pokeDB} handleAdd={handleAdd}/>
+      <Form />
     </div>
   </div>
   );
 }
-
 export default AddNew;
-
 //make Route back to App.js

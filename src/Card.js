@@ -8,6 +8,7 @@ function Card({pokemonCards}) {
       <PokeCard
         pokeMON={pokeMON}
         key={pokeMON.id}
+        img = {pokeMON.image}
         name = {pokeMON.name}
         height = {pokeMON.height}
         weight = {pokeMON.weight}

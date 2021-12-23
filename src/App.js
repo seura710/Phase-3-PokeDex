@@ -30,7 +30,7 @@ function App() {
       <Navigator />
       <Switch>
         <Route exact path='/AddNew'>
-          <AddNew pokeDB={pokeDB} handleAdd={handleAdd}/>
+          <AddNew />
         </Route>
         <Display />
       </Switch>
@@ -47,5 +47,3 @@ function App() {
 }
 
 export default App;
-
-//make route for AddNew

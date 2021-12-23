@@ -21,13 +21,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #18274e;
   color: #e5e5e5;
+  width: 116%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .form {
+  height: 64%;
   position: absolute;
   left: 13.59%;
   right: 13.28%;
@@ -38,12 +41,18 @@ code {
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: baseline;
 }
-.eigth  {
-
+.eigth {
   display: flex;
   flex-wrap: wrap;
-
+  width: 76%;
+  margin-top: 71px;
 }
 .newPokemon {
   height: 237.94091796875px;
@@ -64,8 +73,10 @@ code {
   top: 379.261962890625px;
   border-radius: 10px;
 }
+.fixed {
+  display: flex;
+}
 .nPHW {
-  position: sticky;
   left: 666px;
   top: 379.261962890625px;
   border-radius: [object Object]px;
@@ -76,27 +87,27 @@ code {
   border-radius: 10px;
   height: 36.817657470703125px;
   left: 654px;
-  margin: 5px 10px 0px 9px;
+  margin: 6px;
   border-radius: 10px;
 }
 .vl {
   border: none;
-  border-left: 6px solid rgb(75, 80, 75);
-  margin-left: 147px;
-  height: 500px;
+  border-left: 4px solid rgb(75, 80, 75);
+  margin-left: 73%;
+  height: 84%;
+  border-radius: 3px;
 }
 .addPoke {
   background: #51ae5e;
   font-weight: bold;
-  color:white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
   border-radius: 20px;
-  height: 36.81768798828125px;
-  width: 345.1107177734375px;
+  height: 38px;
+  width: 95%;
   left: 626px;
-  border-radius: 20px;
+  border-radius: 11px;
   border: none;
-  margin: 10px 0px 0px;
+  margin: 5px 0px 0px;
 }
 .formHolder {
   font-weight: bolder;
@@ -106,21 +117,47 @@ code {
   margin: 50px;
   position: absolute;
   position: sticky;
-}
 
-.holdImg{
-  height: 700px;
-  width: 500px;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 60%;
+}
+.imgADDNEW {
+  height: 60%;
+  width: 64%;
+  left: 144.946533203125px;
+  top: 303.0216979980469px;
+  border-radius: 0px;
+  margin: -11px 128px -60px 2px;
+  opacity: 40%;
+}
+img {
+  height: 67%;
+  width: 64%;
+  left: 144.946533203125px;
+  top: 303.0216979980469px;
+}
+.holdImg {
   bottom: 90px;
-  margin: -95px 7px 24px -41px;
-  position: absolute;
   table-layout: fixed;
-  top: 90px;overflow:visible;
+  top: 90px;
+  overflow: visible;
   opacity: 44%;
 }
+.f.contain {
+  display: grid;
+  box-sizing: content-box;
+  display: grid;
+  object-fit: scale-down;
+  float: right;
+  justify-items: center;
+  margin: 0px -1px 7px -32px;
+  margin-left: -34px;
+}
 .formGreet {
-  margin: 19px;
-
   left: -784px;
   top: 103px;
   border-radius: 0px;
@@ -181,18 +218,19 @@ code {
   background: #dc0a2d;
 }
 .ADDPOKE {
-  height: 56.00147247314453px;
-  width: 124.2398681640625px;
+  height: 9%;
+  width: 12%;
   border-radius: 9px;
   position: absolute;
-  left: 1064.47px;
-  left: 85.36%;
   right: 4.67%;
   border: none;
   background: #51ae5e;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   color: white;
+  bottom: 86.7%;
+  padding: 9px;
+  white-space: pre-line;
 }
 .phoneHome {
   position: absolute;
@@ -243,31 +281,28 @@ code {
   filter: blur(2px);
 }
 .spanDex {
-  height: 76px;
-  width: 259px;
-  left: 11px;
-  top: 0px;
-  border-radius: nullpx;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 500%;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 76px;
-  letter-spacing: 0em;
-  text-align: center;
-  left: 3.92%;
-  right: 3.81%;
-  margin-top: 70%;
-  bottom: 8.27%;
-  color: #ffffff;
-}
-hr {
+  word-break: break-word;
+  float: left;
+  overflow-wrap: break-word;
+  break-after: column;
   height: 0px;
   left: 481.62115478515625px;
   position: absolute;
-  left: 38.62%;
-  right: 37.45%;
-  border: 3px solid #fffefe;
+  left: 41.62%;
+  top: 29%;
+  bottom: 41.62%;
+  color: white;
+  font-size: -webkit-xxx-large;
+  font-stretch: extra-condensed;
+  font-weight: 600;
+}
+hr {
+  height: 0px;
+  position: absolute;
+  left: 2.62%;
+  right: 26.45%;
+  border: 1px solid #fffefe;
+  width: 95%;
 }
 .innerText {
   font-family: Roboto;
@@ -291,13 +326,24 @@ hr {
   right: 72.45%;
   top: 62.83%;
   bottom: 12.56%;
-
-  background: #c4c4c4;
-  border: 2px solid #ffffff;
+  margin: 9px;
+  background: white;
+  border: 2px solid #3b3d4d;
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
 }
+.Delete {
+  border: none;
+  font-size: small;
+  font-weight: 600;
+  background-color: transparent;
+  float: right;
+  padding: 0px;
+  color: gray;
+  margin: -6px 6px 0px 7px;
+}
+
 .Poke_field {
   position: absolute;
   left: 13.54%;
@@ -331,16 +377,10 @@ hr {
   font-size: smaller;
   color: #3e3636;
 }
-img {
-  height: 115.071533203125px;
-  width: 110.89141845703125px;
-  left: 144.946533203125px;
-  top: 303.0216979980469px;
-  border-radius: 0px;
-}
+
 .Poke_card_Display {
   position: absolute;
-  left: 13.54%;
+  left: 16.54%;
   right: 13.33%;
   top: 30.28%;
   width: fit-content;
@@ -355,7 +395,6 @@ img {
 }
 input {
   position: center;
-
   border: none;
   padding: 9px;
   margin: 4px;

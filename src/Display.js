@@ -28,7 +28,13 @@ function Display() {
       </div> */}
 
       <div className = "Poke_card_Display">
-      <Card pokemonCards = {pokemonCards} />
+     
+
+          <Card pokemonCards = {pokemonCards}  />
+     
+        </div>
+          </div>
+          <button className = "toggle" />
       </div>
       {/* <Toggle/> */}
       

@@ -31,6 +31,15 @@ const handleSubmit = (e) => {
           <div className ="formHolder">
             <hr className ="vl"/>
             <div className ="formHolder">
+      <div className = "fixed"
+      >
+        <img  className = "imgADDNEW" aria-checked  alt = "placePoke" src = {img}/>
+          <div >
+            <div className = "block">
+            <hr className ="vl"/>
+            </div>
+         </div >
+         <div className ="f.contain">
             <span className="formGreet">YOU FOUND A NEW POKEMON?</span>
               <input placeholder ="Image"onChange ={(e) => setText(e.target.value)} className ="newPokemon"/>
               <input placeholder ="Name" onChange ={(e) => setText(e.target.value)} className ="newPokemon"/>
@@ -39,6 +48,7 @@ const handleSubmit = (e) => {
               <span> <input type ="number" placeholder = "Height" className ="nPHW" />
               <input type ="number" placeholder = "Weigth" className ="nPHW"/></span>
               <button className = "addPoke" type="submit">ADD POKEMON</button>
+              </div>
               </div>
         </div>
       </form>
