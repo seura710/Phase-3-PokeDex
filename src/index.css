@@ -147,7 +147,10 @@ img {
   overflow: visible;
   opacity: 44%;
 }
-.f.contain {
+.f-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   display: grid;
   box-sizing: content-box;
   display: grid;
@@ -156,6 +159,15 @@ img {
   justify-items: center;
   margin: 0px -1px 7px -32px;
   margin-left: -34px;
+}
+.f-contain a {
+  text-decoration: none;
+  color: black;
+}
+#pkref {
+  border-radius: 8px;
+  padding: 7px;
+  border: none;
 }
 .formGreet {
   left: -784px;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 import Form from './Form';
 
@@ -6,7 +7,8 @@ export default function AddNew({ pokeDB, handleAdd }) {
   return (
   <div>
     <div>
-      <Form pokeDB={pokeDB} handleAdd={handleAdd}/>
+      <Form handleAdd={handleAdd}/>
+
     </div>
   </div>
   );

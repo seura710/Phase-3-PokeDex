@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './App.css';
 import img from './placepoke.png'
 
-function Form({ pokeDB, handleAdd }) {
+function Form({ handleAdd }) {
 
   const [name, setName] = useState("")
   const [height, setHeight] = useState("")
@@ -14,7 +15,7 @@ function Form({ pokeDB, handleAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http:/localhost:9292/pokemon', {
+    fetch('http://localhost:9292/pokemon', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,12 +41,14 @@ function Form({ pokeDB, handleAdd }) {
         <div className="formHolder">
           <div className="fixed">
             <img className="imgADDNEW"  alt="placePoke" src={img} />
+
             <div>
               <div className="block">
               </div>
             </div>
-            <div className="f.contain">
+            <div className="f-contain">
               <span className="formGreet">YOU FOUND A NEW POKEMON?</span>
+            <button id='pkref'><a href= 'https://pokemondb.net/pokedex'>Poke References</a></button>
               <input placeholder="Image" onChange={(e) => setImage(e.target.value)} className="newPokemon" />
               <input placeholder="Name" onChange={(e) => setName(e.target.value)} className="newPokemon" />
               <input placeholder="Type" onChange={(e) => setType(e.target.value)} className="newPokemon" />

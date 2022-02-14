@@ -31,6 +31,7 @@ function App(){
 
   function handleAdd(newPoke) {
     console.log("Submit button has been clicked!");
+    console.log(newPoke)
     const addPoke = [...pokemonCards, newPoke];
     setPokemonCards(addPoke);
   }
