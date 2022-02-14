@@ -14,7 +14,7 @@ function Form({ pokeDB, handleAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(pokeDB, {
+    fetch('http:/localhost:9292/pokemon', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function Form({ pokeDB, handleAdd }) {
             <img className="imgADDNEW"  alt="placePoke" src={img} />
             <div>
               <div className="block">
-                <hr className="vl" />
+                {/* <hr className="vl" /> */}
               </div>
             </div>
             <div className="f.contain">

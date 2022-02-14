@@ -2,18 +2,18 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Route, Switch } from "react-router-dom"
-import Navigator from './Navigator';
+import PokeNavBar from './PokeNavBar';
 import AddNew from "./AddNew";
 import Display from './Display';
 
 
-function App() {
+function App(){
 
   const [pokemonCards, setPokemonCards] = useState([]);
   // const pokeDB = "http://localhost:9292/pokemon";
 
   useEffect(() => {
-    fetch("http://localhost:9292/pokemon")
+    fetch('http://localhost:9292/pokemon')
       .then((res) => res.json())
       .then((data) => setPokemonCards(data));
   }, []);
@@ -39,12 +39,13 @@ function App() {
     <div className="App">
       <main>
       <Switch>
-        <Route path='/'>
-        <Navigator/>
-          <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} />
+        <Route path='/form'>
+        <PokeNavBar/>
+          <AddNew pokeDB={'http:/localhost:9292/pokemon'} handleAdd={handleAdd} />
         </Route>
-        <Route path='/addnew'>
-          <AddNew pokeDB={"http://localhost:9292/pokemon"} handleAdd={handleAdd} />
+        <Route path='/'>
+          <PokeNavBar/>
+          <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} />
         </Route>
       </Switch>
       </main>

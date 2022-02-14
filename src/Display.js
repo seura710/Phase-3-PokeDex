@@ -15,7 +15,7 @@ function Display({ pokemonCards, handlePokeDelete }) {
       <div className="Poke_card_Display">
         <Card pokemonCards={pokemonCards} />
       </div>
-      <button className="toggle" />
+      <button className="toggle"/>
     </div>
   );
 }

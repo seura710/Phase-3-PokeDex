@@ -2,12 +2,12 @@ import './App.css'
 import Search from './Search'
 import { Link } from 'react-router-dom'
 
-function Navigator() {
+function PokeNavBar() {
   return (
     <div className="Navigator">
       <nav>
         <div className=" navContain">
-          <Link to="/">
+          <Link to='/'>
             <button className="phoneHome">
               <div className="innerCircle" />
               "
@@ -16,7 +16,7 @@ function Navigator() {
           </Link>
           <Search className="Search" />
         </div>
-        <Link to="/addnew">
+        <Link to='/form'>
           <button className="ADDPOKE" aria-label="+ ADD POKEMON">
             + ADD NEW POKEMON
           </button>
@@ -26,4 +26,4 @@ function Navigator() {
   )
 }
 
-export default Navigator
+export default PokeNavBar
