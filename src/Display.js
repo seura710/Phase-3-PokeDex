@@ -1,38 +1,29 @@
-// import Toggle from './Toggle';
 import './App.css';
-import Form from './Form';
-// import Navigator from './Navigator';
-import {Route, Switch, Link} from "react-router-dom"
-import App from './App.js'
+import { useState,useEffect } from 'react';
+import Card from './Card';
 
-function AddNew( {pokeDB , handleAdd} ) {
+function Display({pokemonCards,handlePokeDelete}) {
+
+
+
   return (
-  <div>
-    <div >
-      {/* <Navigator/> */}
-       <Switch>
-          <Route exact path="/App">
-          <App />
-          </Route>
-          <div>
-            <Link to='App'>
-              <div className="buttonContainer">
-                <button className = "phoneHome">
-                  <div className = "innerCircle"/>
-                  ""
-                  <div className = "inCircle"/>
-                </button>
-              </div>
-            </Link>
-          </div>
-       </Switch>
-      <Form pokeDB={pokeDB} handleAdd={handleAdd}/>
-    </div>
-     <button className = "toggle" />
-  </div>
+    <><div>
+      <br />
+      <div className="title">
+        <span className="spanDex">PokéDex <hr /></span>
+      </div>
+      <div className="Poke-jar"></div>
+
+      <div className="Poke_card_Display">
+
+
+        <Card pokemonCards={pokemonCards} />
+
+      </div>
+    </div><button className="toggle" /></>
+      
+    
   );
 }
 
-export default AddNew;
-
-//make Route back to App.js
+export default Display;

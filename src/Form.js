@@ -39,7 +39,7 @@ function Form({ pokeDB, handleAdd }) {
 
         <div className="formHolder">
           <div className="fixed">
-            <img className="imgADDNEW" aria-checked alt="placePoke" src={img} />
+            <img className="imgADDNEW"  alt="placePoke" src={img} />
             <div>
               <div className="block">
                 <hr className="vl" />

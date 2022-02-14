@@ -1,8 +1,8 @@
-import React  from "react"; 
-import { useState, useEffect} from 'react';
+import React from "react";
+import { useState, useEffect } from 'react';
 import './App.css';
-import {Route, Switch} from "react-router-dom"
-import  Navigator  from './Navigator';
+import { Route, Switch } from "react-router-dom"
+import Navigator from './Navigator';
 import AddNew from "./AddNew";
 import Display from './Display';
 
@@ -29,18 +29,21 @@ function App() {
     const addPoke = [...pokemonCards, newPoke];
     setPokemonCards(addPoke);
   }
-  
+
   return (
     <div className="App">
-      <Navigator />
       <Switch>
-        <Route exact path='/AddNew'>
-          <AddNew pokeDB={pokeDB} handleAdd={handleAdd}/>
+        <Route  path='/'>
+        <Navigator />
+          <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} />
         </Route>
-        <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete}/>
+        <Route exact path='/addnew'>
+          <Navigator />
+          <AddNew pokeDB={pokeDB} handleAdd={handleAdd} />
+        </Route>
       </Switch>
-        <div className = "container"></div>
-      <div classname = "global"></div>
+      <div className="container"></div>
+      <div className="global"></div>
     </div>
   );
 }
