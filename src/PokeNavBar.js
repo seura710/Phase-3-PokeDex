@@ -16,7 +16,7 @@ function PokeNavBar() {
           </Link>
           <Search className="Search" />
         </div>
-        <Link to='/form'>
+        <Link to='/add-new-pokemon'>
           <button className="ADDPOKE" aria-label="+ ADD POKEMON">
             + ADD NEW POKEMON
           </button>

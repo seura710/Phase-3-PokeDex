@@ -4,7 +4,7 @@ function PokeCard({ handlePokeDelete, img,name,height,weight,type,ability}) {
 
   return (
     <div className="card">
-    <img src ={img} alt ="pikachua"/>
+    <img src ={img} alt ="pokemon-img"/>
     <p className ="cardBody">
     <span>Name:{name}</span> <br/>
     <span>Height:{height}m</span> <span>Weight:{weight}kg</span><br/>

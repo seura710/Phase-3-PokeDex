@@ -40,7 +40,7 @@ function App(){
     <div className="App">
       <main>
       <Switch>
-        <Route path='/form'>
+        <Route path='/add-new-pokemon'>
         <PokeNavBar/>
           <AddNew pokeDB={'http:/localhost:9292/pokemon'} handleAdd={handleAdd} />
         </Route>
