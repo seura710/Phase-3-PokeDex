@@ -10,6 +10,8 @@ import Display from './Display';
 function App(){
 
   const [pokemonCards, setPokemonCards] = useState([]);
+  const [isRed, setisRed] = useState(false);
+
   // const pokeDB = "http://localhost:9292/pokemon";
 
   useEffect(() => {
@@ -37,8 +39,7 @@ function App(){
   }
 
   return (
-    <div className="App">
-      <main>
+    <div className={'App ' + (isRed ? 'dark' : 'light')}>      <main>
       <Switch>
         <Route path='/add-new-pokemon'>
         <PokeNavBar/>
@@ -46,7 +47,7 @@ function App(){
         </Route>
         <Route path='/'>
           <PokeNavBar/>
-          <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} />
+          <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} isRed={isRed} setisRed={setisRed}  />
         </Route>
       </Switch>
       </main>

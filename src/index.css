@@ -20,7 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #18274e;
-  color: #e5e5e5;
+  /* color: #e5e5e5; */
   width: 116%;
 }
 
@@ -28,10 +28,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.form {
-  height: 64%;
+:root {
+  --blue-background: #c2e9f6;
+  --blue-border: #72cce3;
+  --blue-color: #96dcee;
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #fff;
+  --font-color: rgb(33, 33, 33);
+  --font-color-light: rgb(155, 155, 155);
+  --background: rgb(255, 255, 255);
+  --background-light: rgb(230, 230, 230);
+}
+.toggle.dark {
+  box-shadow: inset 0px 2px 10px 1px #26202e;
+  border: thin;
+  border: #a1b0bd1c;
+  border-radius: 69px;
+  --blue-background: #0c1d23;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  color: white;
+  border-style: solid;
+}
+.toggle {
+  height: 32.528564453125px;
+  width: 35.68257141113281px;
+  left: 52.47991943359375px;
+  top: 718.4715576171875px;
+  border-radius: 0px;
   position: absolute;
+  left: 4.21%;
+  right: 92.93%;
+  top: 89.7%;
+  bottom: 6.24%;
+  border: none;
+  border-radius: 100%;
+  background: #f80413;
+}
+.App {
+  background-color:#18274e;
+  color: #e5e5e5;  height: 100%;
+}
+.App.red {
+  --font-color: rgb(255, 244, 244);
+  --background: rgb(150, 34, 34);
+  --background-light: rgb(38, 33, 46);
+  transition: all 0.3s;
+}
+.form {
   left: 13.59%;
   right: 13.28%;
   top: 30.26%;
@@ -41,12 +96,22 @@ code {
   box-sizing: border-box;
   box-shadow: 10px 13px 10px 4px rgba(153, 204, 252, 0.28);
   border-radius: 22px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: stretch;
   justify-content: flex-start;
   align-items: baseline;
+}
+.topC {
+  padding: 5px;
+  width: 56%;
+  height: 12%;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-left: 300px;
+  margin-top: 45px;
 }
 .eigth {
   display: flex;
@@ -117,7 +182,6 @@ code {
   margin: 50px;
   position: absolute;
   position: sticky;
-
   display: flex;
   align-content: center;
   align-items: flex-start;
@@ -367,7 +431,7 @@ hr {
   border-radius: 30px;
 }
 
-.toggle {
+/* .toggle {
   height: 32.528564453125px;
   width: 35.68257141113281px;
   left: 52.47991943359375px;
@@ -381,7 +445,7 @@ hr {
   border: none;
   border-radius: 100%;
   background: #f80413;
-}
+} */
 .cardBody {
   font-weight: 700;
   font-variant: initial;
