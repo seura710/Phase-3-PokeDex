@@ -10,13 +10,18 @@ import Display from './Display';
 function App() {
 
   const [pokemonCards, setPokemonCards] = useState([]);
-  const pokeDB = "http://localhost:9292/pokemon";
+  // const pokeDB = "http://localhost:9292/pokemon";
 
   useEffect(() => {
-    fetch(pokeDB)
+    fetch("http://localhost:9292/pokemon")
       .then((res) => res.json())
       .then((data) => setPokemonCards(data));
   }, []);
+  
+
+
+
+
 
   function handlePokeDelete(deleted) {
     console.log("Delete button has been clicked!")
@@ -32,20 +37,21 @@ function App() {
 
   return (
     <div className="App">
+      <main>
       <Switch>
-        <Route  path='/'>
-        <Navigator />
+        <Route path='/'>
+        <Navigator/>
           <Display pokemonCards={pokemonCards} handlePokeDelete={handlePokeDelete} />
         </Route>
-        <Route exact path='/addnew'>
-          <Navigator />
-          <AddNew pokeDB={pokeDB} handleAdd={handleAdd} />
+        <Route path='/addnew'>
+          <AddNew pokeDB={"http://localhost:9292/pokemon"} handleAdd={handleAdd} />
         </Route>
       </Switch>
-      <div className="container"></div>
-      <div className="global"></div>
+      </main>
     </div>
   );
 }
 
 export default App;
+
+

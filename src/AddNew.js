@@ -2,7 +2,7 @@ import './App.css';
 import Form from './Form';
 
 
-function AddNew( {pokeDB , handleAdd} ) {
+export default function AddNew({ pokeDB, handleAdd }) {
   return (
   <div>
     <div >
@@ -12,5 +12,4 @@ function AddNew( {pokeDB , handleAdd} ) {
   );
 }
 
-export default AddNew;
 
