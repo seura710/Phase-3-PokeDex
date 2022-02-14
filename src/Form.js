@@ -42,7 +42,6 @@ function Form({ pokeDB, handleAdd }) {
             <img className="imgADDNEW"  alt="placePoke" src={img} />
             <div>
               <div className="block">
-                {/* <hr className="vl" /> */}
               </div>
             </div>
             <div className="f.contain">
